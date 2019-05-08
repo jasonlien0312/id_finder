@@ -17,7 +17,7 @@ csv_data = "sample_csv.csv" # change this
 name_to_id = {}
 addr_to_id = {}
 count = 1
-with open(csv_data, mode='r', encoding='utf-8', errors='ignore', newline='') as f:
+with open(csv_data, mode='r') as f:
     csv_file = csv.reader(f, delimiter=',', quotechar='"')
     for r in csv_file:
         if count == 1:
